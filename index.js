@@ -45,9 +45,17 @@ let salaryperday = this.payPerHour*hoursWorkedOnDate.call(this,datestr);
 return salaryperday;
 }
 
+<<<<<<< HEAD
 
 function findEmployeeByFirstName(srcArray,firstName){
   return srcArray.find(a => a.firstName===firstName);
+=======
+function allWagesFor(){
+  let workingdate=this.timeInEvents.map(e=>e.date);
+  let salary= workingdate.reduce((sum,d)=> sum=sum+wagesEarnedOnDate.call(this,d),0);
+  return salary;
+}
+>>>>>>> 19f707f7bcabf912ef777f0997a687ca43831b74
 }
 
 
